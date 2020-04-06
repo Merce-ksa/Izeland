@@ -3,6 +3,7 @@
   --color-main: #64AD99;
   --color-secondary: #3693B5;
   --color-secondary2: #FEB01A;
+  --color-button: #E95E33;
   --color-black: #000000;
   --color-white: #ffffff;
 
@@ -51,78 +52,82 @@ nav{
 }
 
 .nav_options_list a:hover{
-  color: var(--color-secondary2);
+  border-bottom: 2px solid var(--color-white);
 }
 
 .intro{
-  height: 85vh;
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   text-align: center;
-}
-
-.intro_title{
-  width: 100%;
-  background-color: var(--color-main);
-}
-
-.title{
-  margin: 0px;
-  margin-top: 30px;
-  font-size: 40px;
-  font-weight: bold;
-  color: var(--color-black);
-}
-
-.subtitle{
-  margin: 0px;
-  position: relative;
-  font-size: 20px;
-  font-weight: bold;
-  color: var(--color-black);
-}
-
-.intro_img{
-  width: 300px;
-  height: 300px;
-  position: relative;
-  margin: 20px auto;
-  border-radius: 50%;
   background-color: var(--color-main);
 }
 
 .intro .intro_img img{
-  width: 300px;
+  width: 400px;
 }
 
 .intro_content{
-  position: relative;
-  /*top: -70px;*/
-  padding: 10px 0 50px 0;
+  width: 50%;
+  padding: 0 50px;
   /*background-color: var(--color-main);*/
+}
+
+.intro_content .title{
+  margin: 0px;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.intro_content .subtitle{
+  margin: 0px;
+  padding-bottom: 50px;
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--color-black);
 }
 
 .intro_content p{
   color: var(--color-black);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .button{
   position: relative;
   top: 20px;
-  padding: 10px;
+  padding: 15px 40px;
   border-radius: 10px;
-  background-color: var(--color-main);
-  font-size: 18px;
+  border: 3px solid #2b453e;
+  font-size: 20px;
   color: var(--color-black);
+
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
 }
 
 .button:hover{
-  font-weight: bold;
+  color: white;
+  background-color: #2b453e;
 }
+
+
+
+
+
+
+
+
 
 .product{
   display: grid;
   grid-template-columns: repeat(3, 400px);
-  /*margin: 60px 0;*/
+  margin: 100px 0;
   justify-content: center;
 }
 
@@ -137,7 +142,7 @@ nav{
   margin: auto;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-secondary2);
+  background-color: var(--color-secondary);
   border-radius: 50%;
 }
 
