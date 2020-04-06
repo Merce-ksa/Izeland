@@ -1,0 +1,20 @@
+extend template.pug
+block content
+	main
+		section.intro
+			p.title.fadeInDown Mat maths
+			p.subtitle.fadeInUp Aventures a Izeland
+			.intro_img
+				img(src="../img/math.png", alt="image Math maths").fadeIn
+			.intro_content
+				p
+					| Acompanya a en Mat en les seves peripècies per Izeland i desvelarás els misteris 
+					| que amaga aquesta illa foradada.
+				p 
+					| A més a més, de la mà d'en Mat, descobrirás les meravelles de les matemàtiques.
+				a(href="#").button Capítols
+		section.product
+			+box("img/box_learn.png", "Complementa", "Aplica els teus coneixements matemàtics.")
+			+box("img/box_review.png", "Reforça", "Deixa't acompanyar per Mat i feforça els teus coneixementts matemàtics")
+			+box("img/box_research.png", "Investiga", "Investiga amb en Mat per superar cada repte.")
+
