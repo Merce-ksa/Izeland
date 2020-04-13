@@ -1,4 +1,4 @@
-extend template.pug
+extend components/template.pug
 block content
 		main.about
 			.about_image 
@@ -15,13 +15,37 @@ block content
 					| Mat Maths és motivador i rigorós. Motivador, ja que s'emmarca en la tradició de transmetre coneixement a partir d’històries, i rigorós, ja que els continguts són acurats i curriculars.
 				p
 					| Mat Maths és útil en moltes situacions diverses:
-					ul
-						li Com a material de suport en una classe ordinària.
-						li Com a material principal en grups difícils o en aules d’acollida.
-						li Per a cobrir una lliçó amb un/a professor/a de guàrdia en absència del/a titular.
-						li Per al treball autònom dels alumnes a casa.
-						li En classes interdisciplinars de matemàtiques i llengua.
-						li Com a material de treball d’estiu.
+				table.table_list
+					tr
+						td
+							span.icon-chevron-right
+						td 
+							|Com a material de suport en una classe ordinària.
+					tr
+						td
+							span.icon-chevron-right
+						td
+							|Com a material principal en grups difícils o en aules d’acollida.
+					tr
+						td
+							span.icon-chevron-right
+						td
+							|Per a cobrir una lliçó amb un/a professor/a de guàrdia en absència del/a titular.
+					tr
+						td
+							span.icon-chevron-right
+						td
+							|Per al treball autònom dels alumnes a casa.
+					tr
+						td
+							span.icon-chevron-right
+						td
+							|En classes interdisciplinars de matemàtiques i llengua.
+					tr
+						td
+							span.icon-chevron-right
+						td
+							|Com a material de treball d’estiu.
 				p 
 					|Mat Maths ha estat ideat per en Xavi Juez i compta amb les il·lustracions de l'Arnau Solà Vila.
 				p 

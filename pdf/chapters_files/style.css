@@ -22,11 +22,6 @@
 }
 
 body{
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -81,7 +76,7 @@ nav{
 .nav_options_list a {
   text-decoration: none;
   color: var(--color-6);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: var(--bold);
   transition-property: border-bottom, color; 
   transition-duration: 0.3s;
@@ -207,7 +202,6 @@ footer{
 
 
 .about{
-  margin: 80px 0;
   display: grid;
   grid-template-columns: 1fr, 4fr;
   justify-content: center;
@@ -241,11 +235,10 @@ footer{
   font-size: 30px;
 }
 
-.chapters{
-  margin: 80px 0;
-}
 
-.chapters .title{
+
+
+/*.chapters .title{
   margin: 40px 0 0 0;
   padding-bottom: 0px;
   font-size: 40px;
@@ -265,116 +258,17 @@ footer{
 
 .chapter{
   display: flex;
-  height: 100%;
-  margin: 0 auto;
-  padding: 20px;
+  width: auto;
+  height: auto;
   justify-content: space-around;
+  border: 1px solid red;
+  
 }
 
 .chapter_img{
-  margin: 0 auto;
+  margin: auto;
 }
 
 .chapter_image img{
-  width: 320px;
-}
-
-.chapter_box .title_chapter{
-  margin: 0;
-  padding: 0;
-  font-size: 25px;
-  font-weight: var(--bold);
-  color: var(--color-6);
-  text-align: center;
-}
-
-.chapterline_title a{
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: var(--medium);
-  text-decoration: none;
-  color: black;
-  transition: font-weight 0.3s linear 0s; 
-}
-
-.chapterline_title a:hover{
-  font-weight: bold;
-}
-
-.chapterline_title a:last-child{
-  margin-bottom: 0;
-}
-
-.chapterline{
-  max-width: 100%;
-  position: relative;
-  padding-top: 3rem;
-  font-size: 16px;
-}
-
-.chapterline:before{
-  content: "";
-  width: 4px;
-  height: 100%;
-  left: 2.5rem;
-  background-color:  rgba(2, 87, 140, 1);
-  position: absolute;
-  top: 0;
-}
-
-.chapterline_box{
-  position: relative;
-}
-
-.chapterline_box:not(:last-of-type){
-  margin-bottom: 30px;
-}
-
-.chapterline_box:before{
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color:  rgba(2, 87, 140, 1);
-  position: absolute;
-  left: 0;
-  top: 35px;
-  z-index: -1;
-}
-
-.chapterline_content{
-  min-width: 65px;
-  position: absolute;
-  left: 0;
-  border-radius: 2px;
-  box-sizing: border-box;
-  padding: .5rem 1.5rem;
-  text-align: center;
-
-  background-color:  rgba(2, 87, 140, 1);
-  color: #fff;
-}
-
-.chapterline_number{
-  font-size: 2rem;
-  font-weight: 700;
-  display: block;
-}
-
-.chapterline_part{
-  display: block;
-  font-size: .8em;
-  text-transform: uppercase;
-}
-
-.chapterline_title{
-  width: 240px;
-  padding: 1.5rem 1rem;
-  position: relative;
-  left: 100px;
-  border-radius: 2px;
-  border-left: 3px solid  rgba(2, 87, 140, 1);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
-  background-color: #fff;
-}
+  width: 300px;
+}*/

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/chapters.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    
+    
+    
+  <link rel="stylesheet" href="./chapters_files/style.css"><link rel="stylesheet" href="./chapters_files/animations.css"><link rel="stylesheet" href="./chapters_files/arrows.css"><link rel="stylesheet" href="./chapters_files/timeline.css"></head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_brand"><a href="http://127.0.0.1:5500/index.html">Izeland</a></div>
+        <div class="nav_options">
+          <ul class="nav_options_list">
+            <li><a href="http://127.0.0.1:5500/chapters.html">Capítols</a></li>
+            <li><a href="http://127.0.0.1:5500/about.html">Mat Maths</a></li>
+            <li><a>CAST</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="chapters">
+      <p class="title">Temporada 1</p>
+      <p class="subtitle">Ko, la muntanya màgica</p>
+      <section class="chapter">
+        <div class="chapter_box" style="position: relative;">
+          <p class="subtitle">Capítol 1: Vol a Twelville</p>
+          <div class="chapter_image"><img src="./chapters_files/chapter_1.png" alt="Chapter image"></div>
+          <div class="chapterline">
+            <div class="chapterline_box">
+              <div class="chapterline_content"><span class="chapterline_part">Part</span><span class="chapterline_number">1</span></div>
+              <div class="chapterline_title">
+                <div class="chapterline_link"><a href="http://127.0.0.1:5500/pdf/mm1-1-1cat.pdf">Embarcant</a></div>
+              </div>
+            </div>
+            <div class="chapterline_box">
+              <div class="chapterline_content"><span class="chapterline_part">Part</span><span class="chapterline_number">2</span></div>
+              <div class="chapterline_title">
+                <div class="chapterline_link"><a href="http://127.0.0.1:5500/pdf/mm1-1-2cat.pdf">Un passatger molt pelut</a></div>
+              </div>
+            </div>
+            <div class="chapterline_box">
+              <div class="chapterline_content"><span class="chapterline_part">Part</span><span class="chapterline_number">3</span></div>
+              <div class="chapterline_title">
+                <div class="chapterline_link"><a href="http://127.0.0.1:5500/pdf/mm1-1-3cat.pdf">Cursa entre avions</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="contact"><a hfer="#">izeland@gmail.com</a></div>
+    </footer>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

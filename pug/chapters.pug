@@ -1,9 +1,9 @@
-extend template.pug
+extend components/template.pug
 block content
 	main.chapters
-		p.title Temporada 1: Ko, la muntanya màgica
+		p.title Temporada 1
+		p.subtitle Ko, la muntanya màgica
 		section.chapter
 			+chapterBox("img/chapter_1.png", title[0], chapter1pdf[0], chapter1pdf[1], chapter1pdf[2], partsChapter1[0], partsChapter1[1], partsChapter1[2])
 			+chapterBox("img/chapter_2.png", title[1], chapter2pdf[0], chapter2pdf[1], chapter2pdf[2], partsChapter2[0], partsChapter2[1], partsChapter2[2])
-			+chapterBox("img/chapter_3.png", title[2], chapter3pdf[0], chapter3pdf[1], chapter3pdf[2], partsChapter3[0], partsChapter3[1], partsChapter3[2])
-
+			+chapterBox("img/chapter_3.png", title[2], chapter3pdf[0], chapter3pdf[1], chapter3pdf[2], partsChapter3[2], partsChapter3[1], partsChapter3[2])
