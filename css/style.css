@@ -2,10 +2,10 @@
 /*@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 :root{
-  --color-1: rgba(242, 106, 131, 1); 
-  --color-2: rgba(165, 26, 117, 1); 
-  --color-3: rgba(2, 87, 140, 1); 
-  --color-4: rgba(41, 165, 165, 0.8); 
+  --color-1: rgba(242, 106, 131, 1);
+  --color-2: rgba(165, 26, 117, 1);
+  --color-3: rgba(2, 87, 140, 1);
+  --color-4: rgba(41, 165, 165, 0.8);
   --color-5: rgba(255, 255, 255, 1);
   --color-6: rgba(8, 4, 4, 1);
 
@@ -22,14 +22,13 @@
 }
 
 body{
-  height: 100%;
+  /*height: 100%;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0;*/
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: var(--Font2);
 }
 
@@ -42,7 +41,7 @@ a {
   padding: 0;
   font-size: 40px;
   font-weight: var(--bold);
-  color: var(--color-3)
+  color: var(--color-3);
 }
 
 .subtitle {
@@ -53,6 +52,11 @@ a {
   color: var(--color-3)
 }
 
+header{
+  width: 100%;
+  background-color: var(--color-4);
+}
+
 nav{
   display: flex;
   width: 100%;
@@ -60,7 +64,7 @@ nav{
   align-items: center;
   padding: 5px 30px;
   box-sizing: border-box;
-  background-color: var(--color-4);
+  /*background-color: var(--color-4);*/
 }
 
 .nav_brand a{
@@ -83,9 +87,9 @@ nav{
   color: var(--color-6);
   font-size: 18px;
   font-weight: var(--bold);
-  transition-property: border-bottom, color; 
+  transition-property: border-bottom, color;
   transition-duration: 0.3s;
-  transition-timing-function: linear; 
+  transition-timing-function: linear;
   transition-delay: 0s;
 }
 
@@ -115,14 +119,14 @@ nav{
   padding: 0 50px;
 }
 
-.intro_content .title{
+.intro_content .intro_title{
   margin: 0px;
   font-size: 100px;
   font-weight: bold;
   color: var(--color-5);
 }
 
-.intro_content .subtitle{
+.intro_content .intro_subtitle{
   margin: 0px;
   padding-bottom: 20px;
   position: relative;
@@ -142,7 +146,6 @@ nav{
   top: 20px;
   padding: 15px 40px;
   border-radius: 10px;
-  border: 2px solid var(--color-2);
   font-size: 20px;
   font-weight: var(--medium);
   color: var(--color-5);
@@ -152,13 +155,13 @@ nav{
 
 .button:hover{
   background-color: var(--color-1);
-  border: 2px solid var(--color-2);
 }
 
 .product{
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 1fr);
   margin: 100px 0;
+  grid-column-gap: 50px;
   justify-content: center;
 }
 
@@ -194,17 +197,16 @@ footer{
     color: var(--color-6);
     font-size: 20px;
     font-weight: var(--bold);
-    transition-property: border-bottom, color; 
+    transition-property: border-bottom, color;
     transition-duration: 0.3s;
-    transition-timing-function: linear; 
+    transition-timing-function: linear;
     transition-delay: 0s;
     cursor: pointer;
   }
-  
-  .contact a:hover{
-    color: var(--color-2);
-  }
 
+.contact a:hover{
+  color: var(--color-2);
+}
 
 .about{
   margin: 80px 0;
@@ -296,7 +298,7 @@ footer{
   font-weight: var(--medium);
   text-decoration: none;
   color: black;
-  transition: font-weight 0.3s linear 0s; 
+  transition: font-weight 0.3s linear 0s;
 }
 
 .chapterline_title a:hover{
@@ -377,4 +379,123 @@ footer{
   border-left: 3px solid  rgba(2, 87, 140, 1);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
   background-color: #fff;
+}
+
+@media screen and (max-width: 1024px){
+
+  .intro .intro_img img{
+    width: 450px;
+    padding: 20px;
+  }
+
+  .intro_content .intro_title{
+    font-size: 70px;
+  }
+
+  .intro_content .intro_subtitle{
+    font-size: 35px;
+  }
+
+  .intro_content p{
+    font-size: 18px;
+  }
+
+
+  .chapter_image img{
+    width: 280px;
+  }
+
+  .chapter_box .title_chapter{
+    font-size: 20px;
+  }
+
+  .chapterline_title a{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: var(--medium);
+    text-decoration: none;
+    color: black;
+    transition: font-weight 0.3s linear 0s;
+  }
+
+  .chapterline_title a:hover{
+    font-weight: bold;
+  }
+
+  .chapterline_title a:last-child{
+    margin-bottom: 0;
+  }
+
+  .chapterline{
+    position: relative;
+    padding-top: 3rem;
+    font-size: 16px;
+  }
+
+  .chapterline:before{
+    content: "";
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    background-color:  rgba(2, 87, 140, 1);
+  }
+
+  .chapterline_box{
+    position: relative;
+  }
+
+  .chapterline_box:not(:last-of-type){
+    margin-bottom: 30px;
+  }
+
+  .chapterline_box:before{
+    content: "";
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    background-color:  rgba(2, 87, 140, 1);
+    z-index: -1;
+  }
+
+  .chapterline_content{
+    min-width: 65px;
+    position: absolute;
+    left: 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: .5rem .5rem;
+    text-align: center;
+
+    background-color:  rgba(2, 87, 140, 1);
+    color: #fff;
+  }
+
+  .chapterline_number{
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+  }
+
+  .chapterline_part{
+    display: block;
+    font-size: .8em;
+    text-transform: uppercase;
+  }
+
+  .chapterline_title{
+    width: 180px;/**/
+    padding: 1.5rem 1rem;
+    position: relative;
+    left: 80px;
+    border-radius: 2px;
+    border-left: 3px solid  rgba(2, 87, 140, 1);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+    background-color: #fff;
+  }
+
 }
