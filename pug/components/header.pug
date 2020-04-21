@@ -1,14 +1,20 @@
+
 header
-	nav
-		.nav_brand
+	.header__content
+		a(href="#")#menu_on
+			span
+			span
+			span
+		.header__brand
 			a(href="index.html") Izeland
-		.nav_options
-			ul.nav_options_list
+		nav.nav__options
+			ul.nav__options_list
 				li
-					a(href=links[0])=titles[0]
+					a(href=links[0])#index=titles[0]
 				li
-					a(href=links[1])=titles[1]
+					a(href=links[1])#chapters=titles[1]
 				li
-					a(href=links[2])=titles[2]
+					a(href=links[2])#about=titles[2]
 				li
-					a(href=links[3])=titles[3]
+					a(href="#")
+						img(src="img/nav_esp.png", alt="image lenguage")

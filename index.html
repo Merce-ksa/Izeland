@@ -2,23 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="icons/arrows.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/header.js"></script>
   </head>
   <body>
     <header>
-      <nav>
-        <div class="nav_brand"><a href="index.html">Izeland</a></div>
-        <div class="nav_options">
-          <ul class="nav_options_list">
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="chapters.html">Capítols</a></li>
-            <li><a href="about.html">Mat Maths</a></li>
-            <li><a href="#">CAST</a></li>
+      <div class="header__content"><a href="#" id="menu_on"><span></span><span></span><span></span></a>
+        <div class="header__brand"><a href="index.html">Izeland</a></div>
+        <nav class="nav__options">
+          <ul class="nav__options_list">
+            <li><a href="index.html" id="index">Inici</a></li>
+            <li><a href="chapters.html" id="chapters">Capítols</a></li>
+            <li><a href="about.html" id="about">Mat Maths</a></li>
+            <li><a href="#"><img src="img/nav_esp.png" alt="image lenguage"></a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="intro">
@@ -59,7 +63,7 @@
       </section>
     </main>
     <footer>
-      <div class="contact"><a hfer="#">izeland@gmail.com</a></div>
+      <div class="contact"><a hfer="#">izeland.com@gmail.com</a></div>
     </footer>
   </body>
 </html>

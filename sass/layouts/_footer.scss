@@ -1,0 +1,27 @@
+footer{
+    display: flex;
+    height: 60px;
+    position: relative;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-4;
+    color: $color-2;
+    font-size: 18px;
+  }
+  
+   footer .contact a {
+      text-decoration: none;
+      color: $color-6;
+      font-size: 20px;
+      font-weight: $bold;
+      transition-property: border-bottom, color;
+      transition-duration: 0.3s;
+      transition-timing-function: linear;
+      transition-delay: 0s;
+      cursor: pointer;
+    }
+  
+  .contact a:hover{
+    color: $color-2;
+  }
