@@ -4,31 +4,40 @@
     @include media(mobile-s){
       margin: 0 10px;
     }
-  }
-  
-  .chapters .title{
-    margin: 40px 0 0 0;
-    padding-bottom: 0px;
-    font-size: 40px;
-    font-weight: $bold;
-    color: $color-3;
-    text-align: center;
 
-    @include media(mobile-s){
-    font-size: 35px;;
+    .title{
+      margin: 0;
+      padding-bottom: 0px;
+      font-size: 40px;
+      font-weight: $bold;
+      color: $color-3;
+      text-align: center;
+  
+      @include media(mobile-s){
+      font-size: 35px;;
+      }
     }
-  }
-  
-  .chapters .subtitle {
-    margin: 0 0 40px 0;
-    padding: 0;
-    font-size: 25px;
-    font-weight: $bold;
-    color: $color-3;
-    text-align: center;
 
-    @include media(mobile-s){
-      font-size: 20px;;
+    .subtitle {
+      margin: 0 0 40px 0;
+      padding: 0;
+      font-size: 25px;
+      font-weight: $bold;
+      color: $color-3;
+      text-align: center;
+  
+      @include media(mobile-s){
+        font-size: 20px;
+      }
+    }
+
+    .title_grade{
+      margin: 40px 0 0 0;
+      padding:0;
+      font-size: 25px;
+      font-weight: $bold;
+      color: rgba(2, 87, 140, 0.8);
+      text-align: center;
     }
   }
   
@@ -77,12 +86,20 @@
     padding: 0;
     font-size: 25px;
     font-weight: $bold;
-    color: $color-6;
+    /*color: $color-6;*/
     text-align: center;
 
     @include media(mobile-s){
       font-size: 20px;
     }
+  }
+
+  .chapter_box .title_content {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: $semi-bold;
   }
   
   .chapterline{
@@ -114,7 +131,7 @@
     width: 4px;
     height: 90%;
     left: 2rem;
-    background-color:  rgba(2, 87, 140, 1);
+    background-color: $color-3;
     position: absolute;
     top: 0;
   }
@@ -133,17 +150,13 @@
   
   .chapterline_box:before{
     content: "";
-    width: 100%;
+    width: 50%;
     height: 2px;
-    background-color:  rgba(2, 87, 140, 1);
+    background-color: $color-3;
     position: absolute;
     left: 0;
     top: 35px;
     z-index: -1;
-
-    @include media(mobile-only){
-      width: 50%;
-    }
   }
   
   .chapterline_content{
@@ -155,7 +168,7 @@
     padding: .5rem 0.8rem;
     text-align: center;
   
-    background-color:  rgba(2, 87, 140, 1);
+    background-color: $color-3;
     color: #fff;
   }
   
@@ -177,7 +190,7 @@
     position: relative;
     left: 80px;
     border-radius: 2px;
-    border-left: 3px solid  rgba(2, 87, 140, 1);
+    border-left: 3px solid $color-3;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
     background-color: #fff;
 
@@ -203,7 +216,7 @@
     font-weight: $medium;
     text-decoration: none;
     color: black;
-    transition: font-weight 0.3s linear 0s;
+    @include linkHover(font-weight);
 
     @include media(mobile-s){
       font-size: 16px;
@@ -214,7 +227,6 @@
     @include media(mobile-only){
       width: 100%;
       padding: 0;
-      background-color: grey;
     }
 
     @include media(mobile-m){

@@ -1,5 +1,5 @@
--var titles = ["Inici", "Capítols", "Mat Maths", "CAST"]
--var links = ["index.html", "chapters.html", "about.html", "#"]
+-var titles = ["Inici", "Capítols", "Mat Maths"]
+-var links = ["index.html", "chapters.html", "about.html"]
 
 mixin box(image, title, content)
 	.content_box
@@ -9,16 +9,15 @@ mixin box(image, title, content)
 			p=content
 
 -var title = ["Capítol 1: Vol a Twelville", "Capítol 2: La coreografia", "Capítol 3: Dotzè aniversari"]
--var chapter1pdf = ["pdf/mm1-1-1cat.pdf", "pdf/mm1-1-2cat.pdf", "pdf/mm1-1-3cat.pdf"]
--var chapter2pdf = ["pdf/mm1-2-1cat.pdf", "pdf/mm1-2-2cat.pdf", "pdf/mm1-2-3cat.pdf"]
--var chapter3pdf = ["pdf/mm1-3-1cat.pdf", "pdf/mm1-3-2cat.pdf", "pdf/mm1-3-3cat.pdf"]
+-var content = ["Xifres i nombres", "Divisibilitat", "Definició de fraccions"]
 -var partsChapter1 = ["Embarcant", "Un passatger molt pelut", "Cursa entre avions"]
 -var partsChapter2 = ["Hora del pati", "Reunió clandestina", "Escapar de la fàbrica"]
 -var partsChapter3 = ["Comença la festa", "La botiga nova", "La primera cita"]
 
-mixin chapterBox(image, title, link1, link2, link3, partsChapter1, partsChapter2, partsChapter3)
+mixin chapterBox(image, title, content, partsChapter1, partsChapter2, partsChapter3)
 	.chapter_box
 		p.title_chapter=title
+		p.title_content=content
 		.chapter_image
 			img(src=image, alt="Chapter image")
 		.chapterline
@@ -28,18 +27,18 @@ mixin chapterBox(image, title, link1, link2, link3, partsChapter1, partsChapter2
 					span.chapterline_number 1
 				.chapterline_title
 					.chapterline_link
-						a(href=link1  target="_blank")=partsChapter1
+						a(href="#")=partsChapter1
 			.chapterline_box
 				.chapterline_content
 					span.chapterline_part Part
 					span.chapterline_number 2
 				.chapterline_title
 					.chapterline_link
-						a(href=link2 target="_blank")=partsChapter2
+						a(href="#")=partsChapter2
 			.chapterline_box
 				.chapterline_content
 					span.chapterline_part Part
 					span.chapterline_number 3
 				.chapterline_title
 					.chapterline_link
-						a(href=link3 target="_blank")=partsChapter3
+						a(href="#")=partsChapter3

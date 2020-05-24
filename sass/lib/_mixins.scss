@@ -1,0 +1,6 @@
+@mixin linkHover ($element) {
+    transition-property: $element;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+  }

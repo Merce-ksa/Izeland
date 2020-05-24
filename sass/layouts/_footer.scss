@@ -15,10 +15,7 @@ footer{
       color: $color-6;
       font-size: 20px;
       font-weight: $bold;
-      transition-property: border-bottom, color;
-      transition-duration: 0.3s;
-      transition-timing-function: linear;
-      transition-delay: 0s;
+      @include linkHover(color);
       cursor: pointer;
     }
   

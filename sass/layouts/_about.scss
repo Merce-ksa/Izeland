@@ -33,9 +33,21 @@
   
   .about_image img{
     width: 400px;
+    height: auto;
 
     @include media(mobile-only){
       width: 380px;
+      height: 380px;
+    }
+
+    @include media(mobile-m){
+      width: 320px;
+      height: 320px;
+    }
+
+    @include media(mobile-s){
+      width: 300px;
+      height: 300px;
     }
   }
   
